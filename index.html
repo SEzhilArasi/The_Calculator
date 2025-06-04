@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Background Math Symbols -->
+<!-- Background Math Symbols -->
+<span class="math-bg" style="top: 20%; left: 15%; animation-delay: 1s;">∫f(x)dx</span>
+<span class="math-bg" style="top: 30%; left: 25%; animation-delay: 2s;">π</span>
+<span class="math-bg" style="top: 40%; left: 35%; animation-delay: 3s;">√x</span>
+<span class="math-bg" style="top: 50%; left: 45%; animation-delay: 4s;">Δ</span>
+<span class="math-bg" style="top: 60%; left: 55%; animation-delay: 5s;">∑</span>
+<span class="math-bg" style="top: 10%; left: 90%; animation-delay: 9.5s;">∈</span>
+<span class="math-bg" style="top: 80%; left: 75%; animation-delay: 7s;">∞</span>
+<span class="math-bg" style="top: 90%; left: 85%; animation-delay: 8s;">∂</span>
+<span class="math-bg" style="top: 15%; left: 80%; animation-delay: 0.5s;">a² + b² = c²</span>
+<span class="math-bg" style="top: 35%; left: 10%; animation-delay: 1.5s;">≠</span>
+<span class="math-bg" style="top: 65%; left: 20%; animation-delay: 2.5s;">≈</span>
+<span class="math-bg" style="top: 85%; left: 30%; animation-delay: 3.5s;">log(x)</span>
+<span class="math-bg" style="top: 25%; left: 60%; animation-delay: 4.5s;">∛x</span>
+<span class="math-bg" style="top: 45%; left: 70%; animation-delay: 5.5s;">θ</span>
+<span class="math-bg" style="top: 55%; left: 90%; animation-delay: 6.5s;">tan(α)</span>
+<span class="math-bg" style="top: 5%; left: 50%; animation-delay: 7.5s;">sin²x + cos²x = 1</span>
+<span class="math-bg" style="top: 75%; left: 5%; animation-delay: 8.5s;">∇</span>
+<span class="math-bg" style="top: 90%; left: 10%; animation-delay: 10.5s;">lim(x→0)</span>
+
+
+
+  <!-- Calculator -->
+  <div class="calculator">
+    <input type="text" id="display" readonly />
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">⌫</button>
+      <button onclick="append('(')">(</button>
+      <button onclick="append(')')">)</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('/')">/</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('*')">*</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('-')">-</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="append('+')">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
